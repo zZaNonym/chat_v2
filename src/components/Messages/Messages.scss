@@ -1,0 +1,12 @@
+.messages {
+  overflow: auto;
+  padding: 20px;
+  height: 100%;
+  position: relative;
+  .messages-spin {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

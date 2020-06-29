@@ -1,0 +1,11 @@
+.dialogs {
+  position: relative;
+  &-search {
+    padding: 0 20px 20px 20px;
+    display: block;
+  }
+  &-list {
+    height: 100%;
+    overflow: auto;
+  }
+}

@@ -1,0 +1,88 @@
+.tictactoe_model {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  &_box {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    &_close {
+      font-size: 16px;
+      position: absolute;
+      right: 0px;
+      margin: 10px;
+      transform: rotate(180deg);
+      &:hover {
+        color: white;
+        background-color: red;
+      }
+    }
+  }
+  .tictactoe_table {
+    box-shadow: 0 0 10px 0.5px;
+    width: 330px;
+    height: 330px;
+    background-color: #0e887c;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    &_cell {
+      width: 100px;
+      height: 100px;
+      background-color: #14bdac;
+      margin: 5px;
+      cursor: pointer;
+      font-size: 80px;
+      text-align: center;
+      line-height: 90px;
+      font-weight: bold;
+      &:hover {
+        background-color: #14bdacc0;
+      }
+    }
+  }
+  .choseSymbol_container {
+    background-color: #0e887c;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 110px;
+    width: 330px;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 3px 3px 12px 1px grey;
+    &_wait {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & > p {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+    animation-name: colorAnime;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+  }
+}
+
+@keyframes colorAnime {
+  0% {
+    background-color: #0e887c;
+  }
+  100% {
+    background-color: #17c7b5;
+  }
+}

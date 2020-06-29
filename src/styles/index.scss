@@ -1,0 +1,34 @@
+@import '../../node_modules/antd/dist/antd.css';
+@import '../../node_modules/reset-css/reset.css';
+@import './layouts/chat';
+
+body,
+html,
+#root,
+.wrapper {
+  height: 100%;
+  color: #202020;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 14px;
+}
+* {
+  outline: none;
+}
+body {
+  background-color: #f4f7fd;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: black;
+  background: transparent;
+  transition: background-color 5000s ease-in-out 0s;
+}
