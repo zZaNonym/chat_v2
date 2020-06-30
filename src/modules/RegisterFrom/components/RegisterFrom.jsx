@@ -18,7 +18,9 @@ const RegisterForm = (props) => {
     status,
   } = props;
 
-  if (status) return <Redirect to='/register/verify' />;
+  // if (status) return <Redirect to='/register/verify' />;
+  if (status) return <Redirect to='/login' />;
+
   return (
     <div>
       <div className='auth__top'>
