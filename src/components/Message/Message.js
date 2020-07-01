@@ -48,7 +48,7 @@ const Message = ({
         'message--is-audio': idAudio(attachments),
       })}>
       <div className='message__avatar'>
-        <Avatar avatar={user.avatar} _id='dkk' fullname={'adrian'} />
+        <Avatar avatar={user.avatar} _id={user._id} fullname={user.fullname} />
       </div>
       <div className='message__content'>
         {!isTyping && <ReadedStatus isMe={isMe} isReaded={read} />}

@@ -8,7 +8,7 @@ const Avatar = ({ avatar, fullname, _id }) => {
   if (avatar) {
     return <img className='avatar' src={avatar} alt={`avatar ${fullname}`} />;
   } else {
-    const { color1, color2 } = gradientGenerator(_id.substr(0, 3));
+    const { color1, color2 } = gradientGenerator(_id.substr(3, 6));
     const firstChar = fullname[0].toUpperCase();
     return (
       <div
